@@ -1,0 +1,3 @@
+# Approach 1 - Dense_Rank() function
+SELECT Score, DENSE_RANK() OVER (order by Score DESC) as `Rank`
+FROM Scores
